@@ -2,10 +2,12 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from "next/link";
+import Header from "./Header";
 
 const Hero = () => {
   return (
     <section className="h-[800px] relative bg-accent/10 xl:bg-white">
+      <Header />
       <div className="container mx-auto h-full">
         <div className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col items-center xl:items-start justify-center text-center xl:text-left pt-10">
           <div className="xl:hidden relative w-[300px] h-[300px] z-40">
