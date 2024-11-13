@@ -12,6 +12,9 @@ const links = [
     name: "work",
   },
   {
+    name: "experience",
+  },
+  {
     name: "education",
   },
   

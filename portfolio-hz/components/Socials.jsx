@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaItchIo } from "react-icons/fa";
 
 const socials = [
   {
@@ -9,6 +9,10 @@ const socials = [
   {
     icon: <FaGithub />,
     path: "https://github.com/HualiangZ",
+  },
+  {
+    icon: <FaItchIo />,
+    path: "https://hualiangz.itch.io",
   },
 ];
 
