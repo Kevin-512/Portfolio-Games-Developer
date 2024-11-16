@@ -43,6 +43,10 @@
   .textarea {
     @apply resize-none p-[14px];
   }
+  :root {
+
+    --radius: 0.5rem
+  }
 }
 
 .active{

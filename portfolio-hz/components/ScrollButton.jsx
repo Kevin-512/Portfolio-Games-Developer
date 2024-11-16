@@ -2,19 +2,25 @@
 import { IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 400) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
 
-  window.addEventListener("scroll", toggleVisible);
+  useEffect(() => {
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 400) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisible);
+
+    return () => window.removeEventListener("scroll", toggleVisible);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({

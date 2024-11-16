@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 import About from "@/components/About";
-import Education from "@/components/Education";
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Work from "@/components/Work";
 import React from "react";
@@ -25,8 +25,8 @@ const Home = () => {
       <Services/>
       <About />
       <Work />
-      <Education />
-      <div className="h-[3000px]"></div>
+      <Experience />
+      <div className="bg-amber-500 h-[500px]"></div>
     </div>
   );
 };

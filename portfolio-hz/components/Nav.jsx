@@ -14,9 +14,6 @@ const links = [
   {
     name: "experience",
   },
-  {
-    name: "education",
-  },
   
 ];
 
