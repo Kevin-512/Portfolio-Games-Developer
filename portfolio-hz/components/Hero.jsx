@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
-import { Link as ScrollLink } from "next/link";
 import Header from "./Header";
 
 const Hero = () => {
   return (
-    <section className="h-[800px] relative bg-accent/10 xl:bg-white">
+    <section className="h-[800px] relative bg-primary/75 xl:bg-primary">
       <Header />
       <div className="container mx-auto h-full">
         <div className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col items-center xl:items-start justify-center text-center xl:text-left pt-10">
@@ -20,10 +18,11 @@ const Hero = () => {
               className="object-contain rounded-full pb-5"
             />
           </div>
-          <h1 className="h1 font-bold">
-            I <span className="text-accent">Design And Develop</span> Games
+          <h1 className="h1 font-bold text-cream">
+            I <span className="text-accent">Design</span> And{" "}
+            <span className="text-accent">Develop</span> Games
           </h1>
-          <p className="lead max-w-[476px] mb-7">
+          <p className="lead max-w-[476px] mb-7 text-cream/50">
             Using the latest technology to build innovative and creative games
             with endless immersiveness.
           </p>
@@ -40,8 +39,14 @@ const Hero = () => {
               className="object-contain rounded-t-full"
             />
           </div>
-          <div className="hidden xl:flex absolute bottom-0 right-5">
-            <Image src="/hero/polygons.svg" alt="" height={1500} width={1500} />
+          <div className="hidden xl:flex absolute bottom-0">
+            <Image
+              src="/hero/polygons.svg"
+              alt=""
+              height={800}
+              width={800}
+              className="fade-top w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

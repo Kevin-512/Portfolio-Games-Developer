@@ -44,11 +44,15 @@
     @apply resize-none p-[14px];
   }
   :root {
-
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }
 
-.active{
+.active {
   @apply text-accent transition-all duration-200;
+}
+
+.fade-top {
+  mask-image: linear-gradient(to top, black, transparent);
+  -webkit-mask-image: linear-gradient(to top, black, transparent);
 }

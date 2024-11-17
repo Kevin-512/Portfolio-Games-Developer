@@ -38,7 +38,7 @@ const ScrollButton = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
             transition={{ type: "spring", stiffness: 400, damping: 40 }}
-            className="w-12 h-12 flex items-center justify-center bg-accent rounded-2xl cursor-pointer z-50 fixed"
+            className="w-12 h-12 flex items-center justify-center bg-accent text-cream rounded-2xl cursor-pointer z-50 fixed"
             onClick={scrollToTop}
           >
             <IoIosArrowUp />

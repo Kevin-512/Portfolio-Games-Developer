@@ -1,7 +1,7 @@
 "use client";
 import Card from "./Card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FaHtml5 } from "react-icons/fa";
+import { FaJava, FaPython, FaUnity } from "react-icons/fa";
 
 const journey = [
   {
@@ -44,22 +44,22 @@ const journey = [
     type: "skill",
     category: "Programming",
     name: "Python",
-    icon: <FaHtml5 />,
-    description: "Python Learning",
+    icon: <FaPython />,
+    description: "",
   },
   {
     type: "skill",
     category: "Programming",
-    name: "Python",
-    icon: <FaHtml5 />,
-    description: "Python Learning",
+    name: "Java",
+    icon: <FaJava />,
+    description: "",
   },
   {
     type: "skill",
     category: "Programming",
-    name: "Python",
-    icon: <FaHtml5 />,
-    description: "Python Learning",
+    name: "Unity",
+    icon: <FaUnity />,
+    description: "",
   },
 ];
 
@@ -69,10 +69,16 @@ const Cards = () => {
       defaultValue="experience"
       className="w-full flex flex-col items-center"
     >
-      <TabsList>
-        <TabsTrigger value="experience">Experience</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
-        <TabsTrigger value="skills">My Skills</TabsTrigger>
+      <TabsList className="border border-cream">
+        <TabsTrigger value="experience" className="hover:text-cream text-cream/40">
+          Experience
+        </TabsTrigger>
+        <TabsTrigger value="education" className="hover:text-cream text-cream/40">
+          Education
+        </TabsTrigger>
+        <TabsTrigger value="skills" className="hover:text-cream text-cream/40">
+          My Skills
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="experience" className="w-full">
         <div>

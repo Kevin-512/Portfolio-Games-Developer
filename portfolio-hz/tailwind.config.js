@@ -24,10 +24,11 @@ module.exports = {
     extend: {
       colors: {
         primary: "#10151f",
-        secondary: "#475467",
+        secondary: "#171d29",
+        cream: "#F8EFE4",
         accent: {
-          DEFAULT: "#7edad2",
-          hover: "#79d3cc",
+          DEFAULT: "#9F2424",
+          hover: "#801c1c",
         },
       },
       boxShadow: {

@@ -8,7 +8,7 @@ const About = () => {
           {/* Left Placed Images */}
           <div className="hidden xl:flex flex-1 pl-8">
             <div className="relative w-full max-w-[380px]">
-              <div className="absolute right-2 -top-5 -z-10">
+              <div className="absolute right-2 -top-5">
                 <Image
                   src="/about/rook.svg"
                   width={160}
@@ -27,7 +27,7 @@ const About = () => {
                   alt="Games Console"
                 />
               </div>
-              <div className="absolute top-2/4 -right-8 -z-10">
+              <div className="absolute top-2/4 -right-8">
                 <Image
                   src="/about/mario.svg"
                   width={250}
@@ -43,10 +43,10 @@ const About = () => {
           <div className="text-center xl:text-left w-full xl:w-[50%] mx-auto xl:mx-0 flex flex-col gap-6 ">
             <div className="text-center xl:text-left">
               <div>
-                <h2 className="h2 mb-2">Hi, I'm Hualiang!</h2>
-                <p className="text-lg">Games Developer</p>
+                <h2 className="h2 mb-2 text-cream">Hi, I'm Hualiang!</h2>
+                <p className="text-lg text-cream/80">Games Developer</p>
               </div>
-              <p className="max-w-[680px] mx-auto xl:mx-0 mb-2">
+              <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-cream/50">
                 I am a recent graduate with educational background in Computer
                 Science and Games Development. I'm looking to use my creativity
                 and expertise in technologies to develop the best gaming
@@ -54,22 +54,18 @@ const About = () => {
               </p>
               <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 max-w-max mx-auto xl:mx-0 items-center">
                 <div className="max-w-max">
-                  <div className="uppercase font-bold text-primary">
-                    Name
-                  </div>
-                  <p>Hualiang Zhao</p>
+                  <div className="uppercase font-bold text-cream">Name</div>
+                  <p className="text-cream/50">Hualiang Zhao</p>
                 </div>
                 <div className="max-w-max">
-                  <div className="uppercase font-bold text-primary">
+                  <div className="uppercase font-bold text-cream">
                     Experience
                   </div>
-                  <p>Graduated Masters</p>
+                  <p className="text-cream/50">Graduated Masters</p>
                 </div>
                 <div className="max-w-max">
-                  <div className="uppercase font-bold text-primary">
-                    Location
-                  </div>
-                  <p>Manchester, United Kingdom</p>
+                  <div className="uppercase font-bold text-cream">Location</div>
+                  <p className="text-cream/50">Manchester, United Kingdom</p>
                 </div>
               </div>
             </div>

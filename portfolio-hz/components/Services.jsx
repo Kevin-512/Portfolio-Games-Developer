@@ -33,11 +33,13 @@ const Services = () => {
           {services.map((service, index) => {
             return (
               <li
-                className="bg-white shadow-custom p-6 max-w-[350px] md:max-w-none rounded-lg"
+                className="bg-cream shadow-custom p-6 max-w-[350px] md:max-w-none rounded-lg"
                 key={index}
               >
                 {service.icon}
-                <h3 className="text-[20px] text-primary font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-[20px] text-primary font-semibold mb-3">
+                  {service.title}
+                </h3>
                 <p className="text-[15px]">{service.description}</p>
               </li>
             );
