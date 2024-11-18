@@ -31,6 +31,7 @@ const ScrollButton = () => {
 
   return (
     <div className="flex flex-col bottom-0 items-end xl:items-center pr-4">
+      {/* Button for scrolling back to top appears when scroll has past 400 */}
       <AnimatePresence>
         {visible && (
           <motion.div

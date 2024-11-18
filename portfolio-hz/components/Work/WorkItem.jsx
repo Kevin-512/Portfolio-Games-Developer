@@ -7,9 +7,11 @@ const WorkItem = ({ href, category, img, title }) => {
   return (
     <Link href={href} target="_blank" className="group">
       <div className="w-full h-[300px] p-8 rounded-[30px] flex items-center justify-center mb-6 relative overflow-hidden bg-[#f4f4f4]">
+        {/* Displays a badge/icon in the top right of the image */}
         <Badge className="bg-primary text-base z-40 absolute top-6 left-6 capitalize">
           {category}
         </Badge>
+        {/* Code for background image of the work item */}
         <Image
           src={img}
           fill
@@ -19,6 +21,7 @@ const WorkItem = ({ href, category, img, title }) => {
           className="object-cover group-hover:scale-105 transition-all duration-500"
         />
       </div>
+      {/* Section for text and link to code */}
       <div className="flex items-center justify-center">
         <div className="flex-1">
           <h3 className="h3 text-cream/60">{title}</h3>

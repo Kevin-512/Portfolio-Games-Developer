@@ -3,6 +3,8 @@ import Card from "./Card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FaJava, FaPython, FaUnity } from "react-icons/fa";
 
+
+// Const data for journey
 const journey = [
   {
     type: "experience",
@@ -70,6 +72,7 @@ const Cards = () => {
       className="w-full flex flex-col items-center"
     >
       <TabsList className="border border-cream">
+        {/* Displays the selection tabs for the different categories */}
         <TabsTrigger value="experience" className="hover:text-cream text-cream/40">
           Experience
         </TabsTrigger>
@@ -80,6 +83,8 @@ const Cards = () => {
           My Skills
         </TabsTrigger>
       </TabsList>
+
+      {/* Display content for Experiences */}
       <TabsContent value="experience" className="w-full">
         <div>
           {journey
@@ -89,6 +94,8 @@ const Cards = () => {
             })}
         </div>
       </TabsContent>
+
+      {/* Display content for Education */}
       <TabsContent value="education" className="w-full">
         <div>
           {journey
@@ -98,6 +105,8 @@ const Cards = () => {
             })}
         </div>
       </TabsContent>
+
+      {/* Display content for Skills */}
       <TabsContent value="skills" className="w-full">
         <div>
           {journey

@@ -4,7 +4,11 @@ const Experience = () => {
   return (
     <section className="" id="experience">
       <div className="container mx-auto">
-        <h2 className="h2 mb-[30px] text-cream">Education and Experience</h2>
+        {/* Title for section */}
+        <h2 className="h2 mb-[30px] text-cream mt-4">
+          Education and Experience
+        </h2>
+        {/* Section for displaying the collection of education and experiences */}
         <Cards />
       </div>
     </section>

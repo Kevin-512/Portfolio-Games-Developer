@@ -19,6 +19,7 @@ const links = [
 
 const Nav = ({ containerStyles, listStyles, linkStyles, spy }) => {
   return (
+    // Declares template for navigation bar
     <nav className={containerStyles}>
       <ul className={listStyles}>
         {links.map((link, index) => {

@@ -20,8 +20,10 @@ const Card = ({
         <div className="flex flex-col h-full">
           <div className="h-[80px] xl:h-[68px] bg-cream flex flex-col xl:flex-row justify-center xl:justify-between items-center px-6 md:px-[84px] rounded-tl-[8px] rounded-tr-[8px]">
             <div className="flex gap-2">
+              {/* Accompanying icon alongside titles */}
               <SiBoardgamegeek className="text-primary mt-1.5 items-center" />
               <h3 className="text-lg font-semibold text-primary">
+                {/* Display in correct section depending on category */}
                 {type === "experience"
                   ? position
                   : type === "education"
@@ -46,7 +48,7 @@ const Card = ({
                   <Image src={logoURL} fill alt="" className="object-contain" />
                 </div>
               )}
-
+              {/* Display the location of the skill */}
               <div className="xl:border-l xl:border-secondary/10 xl:pl-12 w-full">
                 <h3 className="hidden xl:flex h3 mb-2 xl:mb-4">
                   {type === "experience"

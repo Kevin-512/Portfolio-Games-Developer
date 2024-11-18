@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { IoGameController } from "react-icons/io5";
 import { FaUnity, FaReact, FaJava } from "react-icons/fa";
 
@@ -30,6 +29,7 @@ const Services = () => {
     <section className="relative z-40">
       <div className="container mx-auto">
         <ul className="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[20px] -top-12 place-items-center lg:place-content-stretch">
+          {/* Subsection underneath the hero giving a brief description of skills and familiar programming languages */}
           {services.map((service, index) => {
             return (
               <li
